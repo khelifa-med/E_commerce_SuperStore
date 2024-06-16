@@ -1,0 +1,49 @@
+
+
+.rematedProduct {
+    margin-top: 2rem;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0 25px;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    max-width: 100%;
+}
+
+
+.rematedProduct .card {
+    max-width: 250px;
+    border: 1px solid #5AB2FF;
+    border-radius: 5px;
+    background: linear-gradient(#EEF7FF, #FFF2D7);
+    transition: 0.5s ease;
+}
+
+.rematedProduct .card:hover {
+    box-shadow: 2px 3px 3.5px rgb(3, 174, 210, 0.3);
+    transform: scale(1.03);
+    cursor: pointer;
+
+}
+
+
+.rematedProduct .card .box {
+    max-width: 100%;
+    flex-direction: column;
+    gap: 1rem;
+
+
+}
+
+.rematedProduct .card .box .title {
+    justify-content: center;
+
+
+}
+
+
+
+.rematedProduct .proces_info {
+    margin: 10px 5px;
+}

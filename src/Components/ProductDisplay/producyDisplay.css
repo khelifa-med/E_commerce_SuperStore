@@ -1,0 +1,211 @@
+/* Container for the entire product display */
+.productDispaly {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    margin: 2rem 0;
+    gap: 2rem;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: 0.3s ease;
+    flex-wrap: wrap;
+}
+
+/* Left section of the product display */
+.productDispaly .productDisplay_lift {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+    flex: 1;
+}
+
+/* List of small images */
+.productDispaly .productDisplay_lift .imageDiplay_list {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.productDispaly .productDisplay_lift .imageDiplay_list img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    cursor: pointer;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+}
+
+.productDispaly .productDisplay_lift .imageDiplay_list img:hover {
+    transform: scale(1.1);
+}
+
+/* Main large image */
+.productDispaly .productDisplay_lift .imageDisplay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.productDispaly .productDisplay_lift .imageDisplay img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+}
+
+/* Right section of the product display */
+
+.productDispaly .productDispaly_right {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    flex: 1;
+}
+
+.productDispaly .productDispaly_right h1 {
+    font-size: 2rem;
+    margin: 0;
+}
+
+/* Rating section */
+.productDispaly .productDispaly_right .productDisplay_rate {
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+}
+
+.productDispaly .productDispaly_right .productDisplay_rate img {
+    width: 20px;
+    height: 20px;
+}
+
+.productDispaly .productDispaly_right .productDisplay_rate p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+/* Pricing section */
+.productDispaly .productDispaly_right .productDislayRight_Pices {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.productDispaly .productDispaly_right .oldPrice {
+    text-decoration: line-through;
+    color: #999;
+}
+
+.productDispaly .productDispaly_right .newPrice {
+    color: #e74c3c;
+    font-weight: bold;
+}
+
+/* Description section */
+.productDispaly .productDispaly_right .discription {
+    font-size: 1rem;
+    color: #333;
+    line-height: 1.5;
+}
+
+/* Size selection section */
+.productDispaly .productDispaly_right .size_continair {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.productDispaly .productDispaly_right .size_continair h1 {
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+.productDispaly .productDispaly_right .size {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.productDispaly .productDispaly_right .size div {
+    padding: 0.5rem 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.productDispaly .productDispaly_right .size div:hover {
+    background-color: #f0f0f0;
+}
+
+/* Add to cart button */
+.productDispaly .productDispaly_right .action {
+    padding: 0.75rem 1.5rem;
+    background-color: #41B06E;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.productDispaly .productDispaly_right .action:hover {
+    background-color: #369b5b;
+}
+
+/* Responsive design for screens with a max width of 600px */
+@media (max-width: 600px) {
+    .productDispaly {
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem;
+    }
+
+    .imageDisplay img {
+        max-width: 250px;
+    }
+
+    .productDispaly_right h1 {
+        font-size: 1.5rem;
+    }
+
+    .productDisplay_rate img {
+        width: 16px;
+        height: 16px;
+    }
+
+    .productDislayRight_Pices {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+    }
+
+    .oldPrice, .newPrice {
+        font-size: 1rem;
+    }
+
+    .discription {
+        font-size: 0.9rem;
+    }
+
+    .size_continair h1 {
+        font-size: 1rem;
+    }
+    .size{
+        flex-wrap: wrap;
+    }
+    .size div {
+        padding: 0.4rem 0.8rem;
+    }
+
+    .productDispaly_right .action {
+        width: 50%;
+        padding: 1rem;
+        font-size: 1rem;
+    }
+}

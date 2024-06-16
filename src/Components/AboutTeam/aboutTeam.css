@@ -1,0 +1,60 @@
+.info{
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.CartBody {
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+
+.imageContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 300px;
+    padding: 2px;
+    border: 1px solid rgba(0, 0, 0, 0.151);
+    border-radius: 50%;
+}
+
+.roundedCircle {
+    border-radius: 50%;
+    width: 100%; /* Ensures the image fills the container */
+    height: 100%; /* Ensures the image fills the container */
+    object-fit: cover; /* Ensures the image fits within the circle */
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .CartBody {
+        flex-direction: column;
+    }
+
+    .imageContainer {
+        width:100%;
+        height: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .CartBody {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .imageContainer {
+        width: 100%;
+        height: 100%;
+    }
+
+    .info {
+        gap: 0.5rem;
+    }
+}

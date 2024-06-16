@@ -1,0 +1,158 @@
+/* Container for the login/signup form and animation */
+.continaire {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 5rem;
+    height: auto;
+    min-height: 60vh;
+    background: linear-gradient(180deg, #EEEEEE, #EEEDEB 40%);
+    padding: 2rem;
+}
+
+/* Form styling */
+.continaire form {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    max-height: 60%;
+    gap: 1rem;
+    background-color: #FEFAF6;
+    border-radius: 10px;
+    padding:1rem  2rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: 0.5s ease;
+}
+
+.continaire form:hover {
+    transform: scale(1.03) skewX(1deg);
+}
+
+/* Form heading */
+.continaire form h1 {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.8rem;
+    margin-top: 0;
+}
+
+/* Input fields container */
+.continaire form .inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Individual input field styling */
+.continaire form .inputs input {
+    all: unset;
+    width: 90%;
+    padding: 12px;
+    border-bottom: 1px solid rgba(148, 137, 121, 0.5);
+    font-size: 0.9rem;
+    font-family: Arial, Helvetica, sans-serif;
+    outline: none;
+}
+
+/* Actions container */
+.continaire form .actions {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    align-items: center;
+}
+
+/* Submit button styling */
+.continaire form .actions button {
+    all: unset;
+    width: 90%;
+    padding: 16px;
+    border: 1px solid rgba(0, 128, 0, 0.5);
+    border-radius: 10px;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    text-align: center;
+    font-weight: bold;
+    background-color: #41B06E;
+    transition: 0.5s ease;
+}
+
+.continaire form .actions button:hover {
+    cursor: pointer;
+    background-color: #369b5b;
+}
+
+/* Paragraph and span inside actions */
+.continaire form .actions p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.9rem;
+    opacity: 0.9;
+    color: black;
+}
+
+.continaire form .actions span {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.9rem;
+    opacity: 0.9;
+    color: red;
+    cursor: pointer;
+}
+
+/* Checkbox and agreement text */
+form .agree {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+form .agree input {
+    font-size: 0.9rem;
+    opacity: 0.7;
+    color: black;
+    cursor: pointer;
+}
+
+form .agree p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.9rem;
+    opacity: 0.7;
+    color: black;
+}
+
+/* Animation container */
+.animatin_login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Responsive design for screens with a max width of 600px */
+@media (max-width: 600px) {
+    .continaire {
+        flex-direction: column;
+        margin-top: 2rem;
+        padding: 1rem;
+    }
+
+    .continaire form {
+        width: 100%;
+        padding: 1rem;
+        margin:5rem 2rem;
+    }
+
+    .continaire form .inputs input,
+    .continaire form .actions button {
+        width: 80%;
+    }
+
+    .animatin_login {
+       display: none;
+    }
+
+    
+}

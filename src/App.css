@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+/* :root {
+  --primary: rgb(250, 252, 252);
+  --secndary : 
+} */
+
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+
+}
+
+
+
+.flex {
+  display: flex;
+}
+
+.border {
+  border: 2px solid red;
+}
+
+a{
+  all: unset;
+}
+
+button {
+  all: unset;
+  text-align: center;
+}
+
+/* .container {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+} */
+
+
+
+
+.scrollToTop{
+  background-color:#C0D6E8;
+  border: 1px solid #DAC0A3;
+  width: 2.4rem;
+  height: 2.4rem;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 1.5rem;
+  right: 1rem;
+  text-align: center;
+  font-size: 1.4rem;
+  transition: 0.5s ease;
+ 
+}
+
+.scrollToTop:hover{
+  background-color:#0E46A3;
+  cursor: pointer;
+  color: white;
+ 
+}
+
+@media (max-width  : 600px){
+  
+
+  .scrollToTop{
+      background-color:rgb(192, 214, 232,0.4);
+      width: 2rem;
+      height: 2rem;  
+      font-size: 1rem; 
+  }
+}
+
+
+
+
+
+
+
+
+
+

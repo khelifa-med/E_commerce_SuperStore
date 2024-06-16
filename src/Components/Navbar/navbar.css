@@ -1,0 +1,251 @@
+/* navbar.css */
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+header {
+    justify-content: space-around;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgba(255, 255, 255, 0.9);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+header .logo {
+    text-decoration: none;
+    align-items: center;
+    cursor: pointer;
+}
+
+.logo p {
+    font-size: 0.9rem;
+    font-weight: 500;
+    text-shadow: 1px 2px 2.5px #FBA1B7;
+}
+
+header nav {
+    gap: 10px;
+    align-items: center;
+}
+
+header nav .linkk {
+    margin: 0 20px;
+    gap: 2px;
+    color: #1a1b1b;
+    transition: 0.5s ease;
+}
+
+header nav .linkk:hover {
+    color: blue;
+    cursor: pointer;
+}
+
+header nav .linkk hr {
+    border: none;
+    width: 80%;
+    height: 3px;
+    border-radius: 10px;
+    background-color: red;
+    transition: 0.5s ease;
+}
+
+header .actions {
+    align-items: center;
+    gap: 20px;
+}
+
+.actions button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 10px;
+    background-color: #9BCF53;
+    color: #81689D;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+.actions button:active {
+    transform: scale(1.1);
+    background-color: azure;
+}
+
+.cartblock {
+    position: relative; /* Position relative to place the counter absolutely */
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem;
+    transition: transform 0.3s ease;
+}
+
+.cartblock:hover {
+    transform: scale(1.1); /* Scale up on hover for a visual effect */
+}
+
+.cartImage {
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+}
+
+.counter {
+    position: absolute; /* Position absolute to place over the cart icon */
+    top: 0;
+    right: 0;
+    transform: translate(50%, -50%);
+    background-color: red; /* Background color for the counter */
+    color: white; /* Text color for the counter */
+    border-radius: 50%; /* Round shape */
+    padding: 0.2rem 0.5rem; /* Padding for spacing */
+    font-size: 0.8rem; /* Font size */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header .showButton {
+    display: none;
+}
+
+header .modal {
+    position: fixed;
+    inset: 0;
+    background-color: rgba(44, 44, 48, 0.91);
+    backdrop-filter: blur(4px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1001;
+}
+
+header .modal .modalContent {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    text-align: center;
+    position: relative;
+    width: 80%;
+    max-width: 500px;
+}
+
+header .modal .modalNav {
+    flex-direction: column;
+    gap: 2rem;
+    width: 100%;
+    margin: auto;
+    padding: 20px;
+    background-color: #333;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(224, 216, 216, 0.849);
+    animation: mymove 1.5s 1;
+}
+
+@keyframes mymove {
+    0% {
+        transform: scale(0);
+    }
+
+    60% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.modalNav .login_close {
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .modal .modalNav a {
+    width: 100%;
+    padding: 10px;
+    color: #fcfbfb;
+    font-weight: bold;
+    text-align: left;
+    border-bottom: 1px solid #ccc;
+}
+
+header .modal .modalNav a:hover {
+    color: #333;
+    background-color: #f0f0f0;
+}
+
+header .modal .modalNav .login_close .icon-close {
+    font-size: 1.3rem;
+    color: red;
+    transition: 0.5s ease;
+}
+
+header .modal .modalNav .login_close .icon-close:hover {
+    cursor: pointer;
+    transform: rotate(180deg);
+}
+
+hr {
+    margin-top: 5px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    width: 100%;
+}
+
+/* Media Queries */
+@media (min-width:700px) {
+    header.flex .modal {
+        display: none;
+    }
+
+}
+
+@media (max-width: 700px) {
+    header.flex .modalNav {
+        width: 90%;
+    }
+
+    header.flex {
+        justify-content: space-between;
+    }
+
+    header.flex .logo {
+        flex-direction: column;
+        margin-left: 10px;
+        gap: 0;
+        margin-bottom: 5px;
+    }
+
+    header.flex .logo p {
+        display: none;
+    }
+
+    header.flex .dispalyNav {
+        display: none;
+    }
+
+    header.flex .actions button {
+        display: none;
+    }
+
+    header.flex .showButton {
+        display: block;
+        margin-right: 1rem;
+        font-size: 1.3rem;
+        font-weight: 700;
+        cursor: pointer;
+        transition: 0.5s ease;
+    }
+
+    header.flex .showButton:hover {
+        transform: scale(1.2);
+        color: rgb(54, 139, 54);
+    }
+}

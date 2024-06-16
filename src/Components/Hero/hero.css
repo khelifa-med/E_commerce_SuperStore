@@ -1,0 +1,115 @@
+.main_section {
+    background: linear-gradient(180deg, #EEEEEE, #EEEDEB 40%);
+    height: 100vh;
+    margin-top: 5rem;
+    width: 100%;
+    justify-content: space-around;
+
+}
+
+.main_section .left_section {
+    width: 50%;
+    gap: 2rem;
+    margin-left: 2rem;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.main_section .left_section .social_media {
+    gap: 2rem;
+}
+
+
+.left_section .social_media .icon {
+    font-size: 1.8rem;
+    opacity: 0.7;
+}
+
+
+
+
+.left_section h1 {
+    max-width: 80%;
+    font-size: 2.2rem;
+    line-height: 5rem;
+    color: #31363F;
+}
+
+
+.left_section {
+    justify-content: center;
+}
+
+.left_section button {
+    background-color: #DDDDDD;
+    width: 40%;
+    padding: 20px;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    transition: 0.5s ease;
+    border: none
+}
+
+.left_section button:hover {
+    background-color: #9e9c9c;
+    color: white;
+    cursor: pointer;
+}
+
+.main_section .rigth_section {
+    justify-content: center;
+    width: 50%;
+    
+}
+
+
+.main_section .rigth_section img {
+    height: 90vh;
+    border-radius: 10px;
+    box-shadow: 1px 2px 1.1px #dfdedd;
+
+}
+
+
+
+@media (max-width: 700px) {
+    .main_section {
+        margin-top: 5rem;
+        height: 40vh;
+    }
+
+    .main_section .rigth_section {
+        display: none;
+    }
+
+    .main_section .left_section {
+        margin: 1rem auto;
+        width: 100%;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .main_section .left_section h1 {
+        min-width: 100%;
+        font-size: 1.3rem;
+        text-align: center;
+        line-height: 2rem;
+    }
+
+    .left_section .social_media .icon {
+        font-size: 1.4rem;
+    }
+
+
+    .left_section button {
+        background-color: #DDDDDD;
+        width: 80%;
+        padding: 10px;
+        font-size: 1rem;
+        
+        border-radius: 10px;
+        transition: 0.5s ease;
+        border: none
+    }
+
+}

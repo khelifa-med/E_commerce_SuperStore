@@ -1,0 +1,10 @@
+
+
+.item{
+    max-height: 80vh;
+}
+
+.item h3,p{
+  color: black;
+  text-shadow: 1px 1.5px 2px white;
+}

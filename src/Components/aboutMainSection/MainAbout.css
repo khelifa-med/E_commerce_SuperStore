@@ -1,0 +1,60 @@
+
+
+.container .CartBody {
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.container .CartBody .leftSection {
+    max-width: 40%;
+}
+
+
+.container .divider {
+    display: none;
+}
+
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container .CartBody {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .container .CartBody .leftSection, 
+    .container .CartBody .rigthSection {
+        margin: 0 0 20px 0; /* Adds spacing between stacked sections */
+        max-width: 100%; /* Ensures sections take full width on small screens */
+    }
+
+
+    .container .divider {
+        display: block;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    }
+}
+
+@media (max-width: 480px) {
+    .container .CartBody {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container .CartBody .leftSection, 
+    .container .CartBody .rigthSection {
+        min-width: 100%; /* Ensures sections take full width on small screens */
+        text-align: center;
+    }
+
+    .img-thumbnail {
+        width: 100%; /* Reduces image size for small screens */
+        height: 150px;
+    }
+
+    .container .CartBody .leftSection {
+        margin-bottom: 20px;
+    }
+}

@@ -1,0 +1,43 @@
+
+
+.description{
+    margin: 1rem 110px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.description_title{
+    
+   gap: 2rem;
+}
+
+.description_title .review{
+    margin: 0;
+    padding: 5px 10px;
+}
+
+
+.description_title .title{
+    margin: 0;
+    padding: 5px 10px;
+}
+
+.discription_paragraph{
+    padding: 1.5rem 2rem;
+    line-height: 1.5rem;
+    font-size: 0.9rem;
+    opacity: 0.7;
+    font-weight: 500;
+    border:1px solid rgb(128, 128, 128,0.7) ;
+
+}
+
+
+@media (max-width: 768px) {
+    .description {
+        margin: 2rem 20px; /* Adjust margin for smaller screens */
+    }
+
+    .discription_paragraph {
+        padding: 1rem; /* Adjust padding for smaller screens */
+    }
+}
