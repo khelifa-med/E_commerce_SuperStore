@@ -1,16 +1,15 @@
 {
-  "homepage": "https://khelifa-med.github.io/E_commerce_SuperStore",
+  "homepage": "https://khelifa-med.github.io/E_commerce_SuperStore/",
   "name": "e-commerce",
   "private": true,
   "version": "0.0.0",
   "type": "module",
- 
   "scripts": {
+    "dev": "vite",
     "build": "vite build",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
   },
-  
   "dependencies": {
     "@reduxjs/toolkit": "^2.2.5",
     "bootstrap": "^5.3.3",
